@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Horoscope.MainPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+            <Picker x:Name="picker"
+                Title="Choose your zodiac sign"
+                TitleColor="RoyalBlue"
+                BackgroundColor="RoyalBlue"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="30">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Aries</x:String>
+                        <x:String>Taurus</x:String>
+                        <x:String>Gemini</x:String>
+                        <x:String>Cancer</x:String>
+                        <x:String>Leo</x:String>
+                        <x:String>Virgo</x:String>
+                        <x:String>Libra</x:String>
+                        <x:String>Scorpio</x:String>
+                        <x:String>Sagittarius</x:String>
+                        <x:String>Capricorn</x:String>
+                        <x:String>Aquarius</x:String>
+                        <x:String>Pisces</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button
+                x:Name="button"
+                Text="Get your horoscope"
+                Clicked="OnButtonClicked"
+                HorizontalOptions="Center"
+                BackgroundColor="RoyalBlue"
+                TextColor="White"
+                FontSize="33"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
