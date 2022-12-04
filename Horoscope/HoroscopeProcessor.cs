@@ -17,8 +17,8 @@ namespace Horoscope
                 RequestUri = new Uri(uri),
                 Headers =
                 {
-                    { "X-RapidAPI-Key", "4c7398a8bdmsha85adf4842e2539p102769jsn5fd54cb99288" },
-                    { "X-RapidAPI-Host", "sameer-kumar-aztro-v1.p.rapidapi.com" },
+                    { "X-RapidAPI-Key", "API_KEY" },
+                    { "X-RapidAPI-Host", "API_HOST" },
                 },
             };
 
